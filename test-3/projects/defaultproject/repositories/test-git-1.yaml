@@ -1,0 +1,16 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: test-git-1
+  project: defaultproject
+spec:
+  agents:
+  - name: docker-1
+  credentials:
+    password: sealed://credentials.password
+    username: pravin-rafay
+  endpoint: https://github.com/pravin-rafay/test-git-1
+  secret:
+    name: file://artifacts/test-git-1/sealed-secret.yaml
+  sharing: {}
+  type: Git
