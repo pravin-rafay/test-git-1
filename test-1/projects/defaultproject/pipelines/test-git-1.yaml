@@ -4,6 +4,10 @@ metadata:
   name: test-git-1
   project: defaultproject
 spec:
+  sharing:
+    enabled: true
+    projects:
+    - name: test-2
   stages:
   - config:
       destinationRepo:
