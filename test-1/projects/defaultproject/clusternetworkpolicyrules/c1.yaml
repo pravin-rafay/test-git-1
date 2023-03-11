@@ -1,0 +1,6 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicyRule
+metadata:
+  name: c1
+  project: defaultproject
+spec: {}
