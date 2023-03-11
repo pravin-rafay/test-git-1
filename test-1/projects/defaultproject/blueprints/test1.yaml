@@ -10,5 +10,9 @@ spec:
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
+  sharing:
+    enabled: true
+    projects:
+    - name: '*'
   type: custom
   version: v1
