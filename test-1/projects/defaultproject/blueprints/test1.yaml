@@ -4,4 +4,11 @@ metadata:
   name: test1
   project: defaultproject
 spec:
+  base:
+    name: default
+    version: 1.23.0
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
   type: custom
+  version: v1
