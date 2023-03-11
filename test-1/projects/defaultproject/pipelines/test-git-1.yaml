@@ -4,7 +4,6 @@ metadata:
   name: test-git-1
   project: defaultproject
 spec:
-  active: true
   stages:
   - config:
       destinationRepo:
