@@ -1,0 +1,18 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: test-1
+  project: defaultproject
+spec:
+  stages:
+  - config:
+      destinationRepo:
+        path:
+          name: test-2
+        repository: test-git-1
+        revision: test-1
+      includedResources:
+      - name: '*'
+      systemToGitSync: true
+    name: v1
+    type: SystemSync
