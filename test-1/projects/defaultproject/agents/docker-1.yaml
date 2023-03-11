@@ -1,0 +1,10 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: docker-1
+  project: defaultproject
+spec:
+  active: true
+  sharing: {}
+  type: Docker
+  version: r1.23.0
