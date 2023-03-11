@@ -1,0 +1,13 @@
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "l4-policy"
+spec:
+  endpointSelector:
+    matchLabels:
+      version: v3
+  egressDeny:
+  - toPorts:
+      - ports:
+        - port: "80"
+          protocol: TCP

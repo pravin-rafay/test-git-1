@@ -1,0 +1,17 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicyRule
+metadata:
+  name: c1
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/c1/l4_policy.yaml
+    options: {}
+    type: Yaml
+  sharing:
+    enabled: true
+    projects:
+    - name: '*'
+  version: v1
